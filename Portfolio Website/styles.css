@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background for the entire page */
+}
+
+header {
+  background-color: #3a3f44; /* Dark gray background */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: slideDown 1s ease-in-out; /* Added slide-down animation */
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+  animation: fadeIn 2s ease-in-out; /* Added fade-in animation */
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#hero {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Vibrant gradient background */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: zoomIn 1.5s ease-in-out; /* Added zoom-in animation */
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 0;
+  animation: fadeInUp 1.5s ease-in-out; /* Added fade-in-up animation */
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  animation: fadeInUp 2s ease-in-out; /* Added fade-in-up animation */
+}
+
+.hero-content .btn {
+  background-color: #fff;
+  color: #3a3f44;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  animation: bounceIn 2.5s ease-in-out; /* Added bounce-in animation */
+}
+
+.hero-content .btn:hover {
+  background-color: #3a3f44;
+  color: #fff;
+}
+
+section {
+  padding: 2rem;
+  animation: fadeIn 1.5s ease-in-out; /* Added fade-in animation */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #3a3f44;
+}
+
+.project, .about, .skills, .contact {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #ff7e5f; /* Highlight with a border */
+  animation: slideIn 1.5s ease-in-out; /* Added slide-in animation */
+}
+
+footer {
+  background-color: #3a3f44;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  animation: slideUp 1s ease-in-out; /* Added slide-up animation */
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3a3f44;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  z-index: 1000;
+  animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
+}
+
+.scroll-to-top:hover {
+  background-color: #555;
+}
+
+/* Keyframes for animations */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
